@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Retro Sort Workshop
 
-# Run and deploy your AI Studio app
+A top-down retro pixel-art sorting game. Organizar marcadores en frascos o papeles en bandejas.
 
-This contains everything you need to run your app locally.
+## Cómo desplegar en GitHub Pages
 
-View your app in AI Studio: https://ai.studio/apps/25708d32-1d21-4975-8868-816cebd89530
+1. Sube este código a un repositorio de GitHub.
+2. Ve a la pestaña **Settings** (Configuración) de tu repositorio.
+3. En el menú de la izquierda, selecciona **Pages**.
+4. En **Build and deployment** > **Source**, asegúrate de que esté seleccionado `GitHub Actions`.
+5. El flujo de trabajo que he configurado (`.github/workflows/deploy.yml`) se encargará de compilar y desplegar la aplicación automáticamente cada vez que hagas un `push` a la rama `main`.
 
-## Run Locally
+## Desarrollo Local
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
