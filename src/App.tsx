@@ -493,7 +493,7 @@ export default function App() {
         </div>
         <span>© 2026 PIXEL SORT OFFICE LTD.</span>
         <div className="flex gap-1">
-          {COLORS.reverse().map(c => <div key={c} className="w-3 h-3 border border-black" style={{backgroundColor: COLOR_MAP[c]}} />)}
+          {[...COLORS].reverse().map(c => <div key={c} className="w-3 h-3 border border-black" style={{backgroundColor: COLOR_MAP[c]}} />)}
         </div>
       </div>
 
